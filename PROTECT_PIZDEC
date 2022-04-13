@@ -1,0 +1,10 @@
+local username = client.get_username()
+ 
+local users = {"Goofy"}
+ 
+for i = 0, #users do
+	if users[i] == username then
+		return 1
+	end
+end
+return -1
